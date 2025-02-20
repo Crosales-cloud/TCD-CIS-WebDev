@@ -4,9 +4,10 @@ Author:       J Neathawk
 Author URI:   https://knighthawk0811.github.io
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
-*/
-
-
+*/ 
+body {
+    margin: 0;
+}
 
 /*--------------------------------------------------------------
 selector {
@@ -59,22 +60,56 @@ html * {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+nav ul {
+    list-style-type: square; /* You can change "square" to any other value you prefer */
+}
+nav ul li {
+    color: #333; /* Text color */
+} 
+nav ul li::marker {
+    color: #ff6347; /* Change bullet color */
+} 
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+
 
 
 /*--------------------------------------------------------------
 # Header Area
 --------------------------------------------------------------*/
+header {
+    background-color: #4CAF50; /* Change to desired header color */
+    padding: 10px; /* Adding padding to the header */
+}
 
 
 /*--------------------------------------------------------------
 # Content Area
 --------------------------------------------------------------*/
+main {
+    width: calc(70% - 1px); /* 70% width minus 1px */
+    float: left; /* Align to the left */
+    padding: 1rem; /* 1rem of padding */
+    border-right: 1px solid #000; /* 1px border on the right side */
+}
 
+aside {
+    width: 30%; /* 30% width */
+    float: right; /* Align to the right */
+}
 
 /*--------------------------------------------------------------
 # Footer Area
 --------------------------------------------------------------*/
-
+footer {
+    clear: both; /* Clear floated elements */
+    background-color: #4CAF50; /* Same background color as the header */
+    text-align: center; /* Center the text */
+    padding: 10px;
+}
 
 /*--------------------------------------------------------------
 # Reusable Classes
